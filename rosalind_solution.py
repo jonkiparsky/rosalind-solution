@@ -28,7 +28,7 @@ class RosalindSolution(object):
         return self.solve(self.dataset())
 
     def format_solution(self, solution):
-        return solution
+        return str(solution)
     
     def write_solution(self, solution, filepath=None):
         filepath = filepath or self.upload_filepath
@@ -42,3 +42,4 @@ class RosalindSolution(object):
         solution = self.solve_instance()
         self.write_solution(solution)
         print "wrote solution to %s" % self.upload_filename
+
